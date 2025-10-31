@@ -12,7 +12,8 @@ const Home: React.FC = () => {
 
 
   const handleGenerateImage = async () => {
-    console.log("Generating Images");
+    console.log("Generating Image")
+    console.log(process.env.NEXT_PUBLIC_GPT_API_KEY)
   };
 
   return (

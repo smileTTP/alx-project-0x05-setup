@@ -4,7 +4,6 @@ export interface ReactComponentProps {
     children: ReactNode
 }
 
-
 export interface GeneratedImageProps {
     imageUrl: string
     prompt: string
@@ -13,5 +12,8 @@ export interface GeneratedImageProps {
     action: (imagePath: string) => void
 }
 
-export type ImageProps = Pick<GeneratedImageProps, "imageUrl" | "prompt">
+export type RequestProps = {
+    prompt: string;
+}
 
+export type ImageProps = Pick<GeneratedImageProps, "imageUrl" | "prompt">

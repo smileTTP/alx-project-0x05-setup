@@ -67,7 +67,7 @@ const Home: React.FC = () => {
         generatedImages.length ? (
           <div className="">
             <h3 className="text-xl text-center mb-4">Generated Images</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 border max-w-full md:max-w-[1100px] p-2 overflow-y-scroll h-96">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 border max-w-full md:max-w-[1100px] p-2 overflow-y-scroll h-96 rounded-lg border-gray-100">
               {generatedImages?.map(
                 ({ imageUrl, prompt }: ImageProps, index) => (
                   <ImageCard
